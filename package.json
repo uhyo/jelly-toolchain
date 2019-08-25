@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
+    "watch": "tsc --build packages --watch",
     "lint": "lerna run lint"
   },
   "devDependencies": {

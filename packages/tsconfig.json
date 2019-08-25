@@ -1,0 +1,4 @@
+{
+  "files": [],
+  "references": [{ "path": "jelly-parser" }, { "path": "jelly-syntax" }]
+}
