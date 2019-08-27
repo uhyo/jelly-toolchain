@@ -4,5 +4,6 @@
     "outDir": "lib",
     "rootDir": "src"
   },
+  "include": ["./src/**/*.ts"],
   "references": [{ "path": "../jelly-syntax" }]
 }

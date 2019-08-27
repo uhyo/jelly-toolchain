@@ -7,3 +7,8 @@ export const chainNodeType = "chain";
  * Type of Atom node.
  */
 export const atomNodeType = "atom";
+
+/**
+ * Type of Quick node.
+ */
+export const quickNodeType = "quick";
