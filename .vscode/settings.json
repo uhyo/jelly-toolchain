@@ -1,4 +1,7 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",

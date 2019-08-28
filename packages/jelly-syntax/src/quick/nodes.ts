@@ -1,8 +1,8 @@
-import { QuickType } from "./index";
-import { Link } from "../link";
 import { quickNodeType } from "../const";
-import { Clean } from "../util";
+import { Link } from "../link";
 import { Node } from "../node";
+import { Clean } from "../util";
+import { QuickType } from "./index";
 
 export interface QuickNodeDefinitions {
   reduce: {
