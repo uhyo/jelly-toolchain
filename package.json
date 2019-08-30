@@ -2,7 +2,8 @@
   "name": "jelly-toolchain",
   "private": true,
   "scripts": {
-    "build": "lerna run build",
+    "build": "tsc --build packages",
+    "clean": "lerna run clean",
     "watch": "tsc --build packages --watch",
     "lint": "lerna run lint"
   },

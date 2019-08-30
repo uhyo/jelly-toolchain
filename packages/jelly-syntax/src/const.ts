@@ -12,3 +12,8 @@ export const atomNodeType = "atom";
  * Type of Quick node.
  */
 export const quickNodeType = "quick";
+
+/**
+ * Type of Separate Chain Node.
+ */
+export const separateChainType = "separateChain";

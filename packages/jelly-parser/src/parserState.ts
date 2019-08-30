@@ -1,4 +1,5 @@
-import { Chain, Link } from "jelly-syntax";
+import { Chain } from "jelly-syntax";
+import { CurrentChain } from "./currentChain";
 
 export const parserMode = {
   neutral: "neutral",
@@ -12,7 +13,7 @@ export type ParserState = {
   /**
    * currently parsed chain.
    */
-  current: (Link[] | Link)[];
+  current: CurrentChain;
   /**
    * Next offset of current chain.
    */

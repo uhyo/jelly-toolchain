@@ -12,12 +12,12 @@ const addAtom = (state: ParserState, char: string, arity: 0 | 1 | 2): void => {
 
   if (offset !== 0) {
     const last = current[offset - 1];
-    if (Array.isArray(last)) {
-      last.push(atom);
+    if (last.link === null) {
+      last.chain.push(atom);
       return;
     }
   }
-  current.push(atom);
+  current.push({ link: atom });
 };
 
 export const parseChar = (state: ParserState, char: string): void => {
