@@ -6,7 +6,10 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rm -r lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:jest --",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "jelly-syntax": "^0.1.0"
@@ -14,6 +17,18 @@
   "keywords": [
     "Jelly"
   ],
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/lib/"
+    ]
+  },
   "author": "uhyo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2"
+  }
 }

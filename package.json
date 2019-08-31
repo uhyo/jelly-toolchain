@@ -4,6 +4,7 @@
   "scripts": {
     "build": "tsc --build packages",
     "clean": "lerna run clean",
+    "test": "lerna run test",
     "watch": "tsc --build packages --watch",
     "lint": "lerna run lint"
   },
