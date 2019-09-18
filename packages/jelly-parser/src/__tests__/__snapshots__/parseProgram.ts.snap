@@ -40,6 +40,15 @@ Object {
           "name": "ị",
           "type": "atom",
         },
+        Object {
+          "arity": 0,
+          "array": true,
+          "type": "stringLiteral",
+          "values": Array [
+            "Odd",
+            "Even",
+          ],
+        },
       ],
       "type": "chain",
     },

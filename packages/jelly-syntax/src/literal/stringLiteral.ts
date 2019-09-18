@@ -2,6 +2,7 @@ import { stringLiteralType } from "../const";
 import { Link } from "../link";
 
 interface StringLiteralBase extends Link {
+  arity: 0;
   type: typeof stringLiteralType;
 }
 

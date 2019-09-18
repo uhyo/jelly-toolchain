@@ -2,6 +2,7 @@ export * from "./atom";
 export * from "./chain";
 export * from "./const";
 export * from "./link";
+export * from "./literal";
 export * from "./node";
 export * from "./program";
 export * from "./quick";
