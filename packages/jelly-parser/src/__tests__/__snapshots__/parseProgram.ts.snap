@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseProgram ɠḲV×/ị“Odd“Even” 1`] = `
+Object {
+  "links": Array [
+    Object {
+      "links": Array [
+        Object {
+          "arity": 0,
+          "name": "ɠ",
+          "type": "atom",
+        },
+        Object {
+          "arity": 1,
+          "name": "Ḳ",
+          "type": "atom",
+        },
+        Object {
+          "arity": 1,
+          "name": "V",
+          "type": "atom",
+        },
+        Object {
+          "arity": 2,
+          "name": "×",
+          "type": "atom",
+        },
+        Object {
+          "arity": 1,
+          "link": Object {
+            "arity": 2,
+            "name": "×",
+            "type": "atom",
+          },
+          "quick": "reduce",
+          "type": "quick",
+        },
+        Object {
+          "arity": 2,
+          "name": "ị",
+          "type": "atom",
+        },
+      ],
+      "type": "chain",
+    },
+  ],
+}
+`;

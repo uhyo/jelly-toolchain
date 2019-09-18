@@ -17,3 +17,8 @@ export const quickNodeType = "quick";
  * Type of Separate Chain Node.
  */
 export const separateChainType = "separateChain";
+
+/**
+ * Type of string literal type.
+ */
+export const stringLiteralType = "stringLiteral";

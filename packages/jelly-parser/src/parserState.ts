@@ -1,9 +1,14 @@
 import { Chain } from "jelly-syntax";
 import { CurrentChain } from "./currentChain";
 
-export const parserMode = {
-  neutral: "neutral",
-} as const;
+export type ParserMode =
+  | {
+      type: "neutral";
+    }
+  | {
+      type: "string";
+      values: string[];
+    };
 
 export type ParserState = {
   /**
@@ -18,4 +23,8 @@ export type ParserState = {
    * Next offset of current chain.
    */
   offset: number;
+  /**
+   * Current mode of parser.
+   */
+  mode: ParserMode;
 };

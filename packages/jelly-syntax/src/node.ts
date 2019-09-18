@@ -4,12 +4,14 @@ import {
   quickNodeType,
   separateChainType,
 } from "./const";
+import { LiteralType } from "./literal";
 
 type NodeType =
   | (typeof atomNodeType)
   | (typeof chainNodeType)
   | (typeof quickNodeType)
-  | (typeof separateChainType);
+  | (typeof separateChainType)
+  | LiteralType;
 
 export interface Node {
   type: NodeType;

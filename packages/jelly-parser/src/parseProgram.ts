@@ -8,6 +8,9 @@ export const parseProgram = (program: string): Program => {
     lines: [],
     current: [],
     offset: 0,
+    mode: {
+      type: "neutral",
+    },
   };
 
   for (let i = 0; i < program.length; i++) {
