@@ -1,6 +1,7 @@
-import { stringLiteralType } from "../const";
+import { charLiteralType, stringLiteralType } from "../const";
+import { CharLiteral } from "./charLiteral";
 import { StringLiteral } from "./stringLiteral";
 
-export type LiteralType = typeof stringLiteralType;
+export type LiteralType = typeof stringLiteralType | typeof charLiteralType;
 
-export { StringLiteral };
+export { StringLiteral, CharLiteral };

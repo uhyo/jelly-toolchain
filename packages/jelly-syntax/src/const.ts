@@ -22,3 +22,8 @@ export const separateChainType = "separateChain";
  * Type of string literal type.
  */
 export const stringLiteralType = "stringLiteral";
+
+/**
+ * Typeof char literal type.
+ */
+export const charLiteralType = "charLiteral";

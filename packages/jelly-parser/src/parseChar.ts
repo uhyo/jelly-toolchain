@@ -1,6 +1,8 @@
 import {
   Atom,
   atomNodeType,
+  CharLiteral,
+  charLiteralType,
   Link,
   StringLiteral,
   stringLiteralType,
@@ -69,6 +71,21 @@ export const parseChar = (state: ParserState, char: string): void => {
       values[values.length - 1] += char;
       return;
     }
+    case "char": {
+      // parsing char literal
+      // TODO: do not parse char not in code point
+      const link: CharLiteral = {
+        type: charLiteralType,
+        arity: 0,
+        value: char,
+      };
+
+      addLink(state, link);
+      state.mode = {
+        type: "neutral",
+      };
+      return;
+    }
     case "neutral": {
       switch (char) {
         case "“": {
@@ -76,6 +93,13 @@ export const parseChar = (state: ParserState, char: string): void => {
           state.mode = {
             type: "string",
             values: [""],
+          };
+          return;
+        }
+        case "”": {
+          // char literal
+          state.mode = {
+            type: "char",
           };
           return;
         }

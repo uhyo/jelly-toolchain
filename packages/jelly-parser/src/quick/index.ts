@@ -6,7 +6,6 @@ import { ParserState } from "../parserState";
  */
 export const quicks: Partial<Record<string, (state: ParserState) => void>> = {
   "/": state => {
-    console.log(state);
     const lastLink = state.current[state.current.length - 1];
     if (lastLink == null) {
       // TODO: !?
